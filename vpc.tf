@@ -8,6 +8,7 @@ resource "aws_vpc" "myvpc" {
     Name = "Project-VPC"
   }
 }
+
 #IGW
 resource "aws_internet_gateway" "tigw" {
   vpc_id = aws_vpc.myvpc.id
